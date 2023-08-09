@@ -4,10 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <link href="/dist/main.css" rel="stylesheet" />
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="m-0 antialiased">
+    <div id="app">
+      <div
+        class="absolute text-white text-center"
+        style="top: 50%; transform: translate(-50%, -50%); left: 50%"
+      >
+        <h1 class="font-space-mono text-xl uppercase tracking-wide">Niklas Fulle</h1>
+        <p class="font-exo text-4xl">ONE WITH AN EVERLASTING DESIRE FOR THE UNKNOWN & UNTOLD</p>
+        <a
+          class="border px-4 py-2 rounded-lg text-sm font-space-mono uppercase mt-8 hover:bg-white hover:text-gray-800 inline-block hover:cursor-pointer"
+          >View Work</a
+        >
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
