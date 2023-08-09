@@ -6,8 +6,8 @@ import gsap from "gsap";
 const gui = new dat.GUI();
 const world = {
   plane: {
-    width: 400,
-    height: 400,
+    width: 500,
+    height: 500,
     widthSegments: 50,
     heightSegments: 50,
   },
@@ -50,10 +50,12 @@ function generatePlane() {
 
   const colors = [];
   for (let i = 0; i < planeMesh.geometry.attributes.position.count; i++) {
-    colors.push(0, 0.19, 0.4);
+    colors.push(0, 0.19, 0.6);
   }
 
   planeMesh.geometry.setAttribute("color", new THREE.BufferAttribute(new Float32Array(colors), 3));
+
+  planeMesh.rotation.x = -0.6;
 }
 
 const raycaster = new THREE.Raycaster();
@@ -85,7 +87,7 @@ scene.add(planeMesh);
 generatePlane();
 
 const light = new THREE.DirectionalLight(0xffffff, 5);
-light.position.set(0, -1, 1);
+light.position.set(0, -0.6, 1);
 scene.add(light);
 
 const backLight = new THREE.DirectionalLight(0xffffff, 1);
