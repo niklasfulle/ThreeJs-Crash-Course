@@ -20,7 +20,7 @@ const sphere = new THREE.Mesh(
     vertexShader,
     fragmentShader,
     uniforms: {
-      globeTexture: { value: new THREE.TextureLoader().load("./img/globe.jpg") },
+      globeTexture: { value: new THREE.TextureLoader().load("./img/earth.jpg") },
     },
   })
 );
