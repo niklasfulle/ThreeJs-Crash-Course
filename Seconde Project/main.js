@@ -26,7 +26,7 @@ const sphere = new THREE.Mesh(
   })
 );
 
-sphere.rotation.set(0, 0, (-Math.PI * 23) / 180);
+sphere.rotation.set(0, 0, -(-Math.PI * 23) / 180);
 
 scene.add(sphere);
 
