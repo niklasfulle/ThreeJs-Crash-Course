@@ -5,9 +5,8 @@ import atmosphereVertexShader from "./shaders/atmosphereVertex.glsl";
 import atmosphereFragmentShader from "./shaders/atmospehreFragment.glsl";
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color("rgb(15, 23, 42)");
 const camera = new THREE.PerspectiveCamera(75, 600 / 600, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer({ antialias: true });
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
 renderer.setSize(600, 600);
 renderer.setPixelRatio(devicePixelRatio);
