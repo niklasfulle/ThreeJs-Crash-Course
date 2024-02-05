@@ -9,13 +9,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.27",
-    "tailwindcss": "^3.3.3",
-    "vite": "^4.4.5",
-    "vite-plugin-string": "^1.2.1"
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.0.12",
+    "vite-plugin-string": "^1.2.3"
   },
   "dependencies": {
-    "three": "^0.155.0"
+    "three": "^0.161.0"
   }
 }

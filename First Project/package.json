@@ -10,13 +10,13 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.27",
+    "postcss": "^8.4.33",
     "tailwindcss": "^3.3.3",
-    "vite": "^4.4.5"
+    "vite": "^5.0.12"
   },
   "dependencies": {
     "dat.gui": "^0.7.9",
     "gsap": "^3.12.2",
-    "three": "0.126.1"
+    "three": "0.161.0"
   }
 }
