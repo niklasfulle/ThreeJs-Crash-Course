@@ -1,6 +1,5 @@
 import * as THREE from "three";
 import * as dat from "dat.gui";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import gsap from "gsap";
 
 const gui = new dat.GUI();
@@ -68,7 +67,6 @@ renderer.setSize(innerWidth, innerHeight);
 renderer.setPixelRatio(devicePixelRatio);
 document.body.appendChild(renderer.domElement);
 
-new OrbitControls(camera, renderer.domElement);
 camera.position.z = 50;
 
 const planeGeometry = new THREE.PlaneGeometry(

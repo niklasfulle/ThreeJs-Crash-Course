@@ -5,11 +5,10 @@ import atmosphereVertexShader from "./shaders/atmosphereVertex.glsl";
 import atmosphereFragmentShader from "./shaders/atmospehreFragment.glsl";
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color("rgb(15, 23, 42)");
-const camera = new THREE.PerspectiveCamera(75, 700 / 700, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer({ antialias: true });
+const camera = new THREE.PerspectiveCamera(75, 600 / 600, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
-renderer.setSize(700, 700);
+renderer.setSize(600, 600);
 renderer.setPixelRatio(devicePixelRatio);
 document.body.appendChild(renderer.domElement);
 
@@ -26,7 +25,7 @@ const sphere = new THREE.Mesh(
   })
 );
 
-sphere.rotation.set(0, 0, (-Math.PI * 23) / 180);
+sphere.rotation.set(0, 0, -(-Math.PI * 23) / 180);
 
 scene.add(sphere);
 
@@ -46,7 +45,7 @@ atmosphere.scale.set(1.2, 1.2, 1.2);
 
 scene.add(atmosphere);
 
-camera.position.z = 25;
+camera.position.z = 30;
 
 function animate() {
   requestAnimationFrame(animate);
