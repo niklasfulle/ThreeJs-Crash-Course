@@ -16,6 +16,7 @@
     "vite-plugin-string": "^1.2.3"
   },
   "dependencies": {
+    "esbuild": "^0.25.0",
     "three": "^0.173.0"
   }
 }
