@@ -9,14 +9,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.33",
-    "tailwindcss": "^3.3.3",
-    "vite": "^5.0.12"
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^4.0.6",
+    "vite": "^6.1.0"
   },
   "dependencies": {
     "dat.gui": "^0.7.9",
-    "gsap": "^3.12.2",
-    "three": "0.161.0"
+    "gsap": "^3.12.7",
+    "three": "0.173.0"
   }
 }
